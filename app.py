@@ -2,6 +2,10 @@ from flask import Flask, jsonify
 
 app = Flask(__name__)
 
+@app.route('/')
+def inicio():
+    return "API de Divisas Activa"
+
 # Tasas de cambio (puedes ajustar los valores según el día)
 TASA_EURO = 20.50
 TASA_DOLAR = 18.50
